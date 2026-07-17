@@ -1,0 +1,291 @@
+=========================================================
+TNSIF CORE JAVA
+DAY 08 - SCANNER & BUFFEREDREADER
+=========================================================
+
+Topics Covered
+
+1. User Defined Input
+2. Scanner Class
+3. Import Statement
+4. Scanner Methods
+5. Reading Character Input
+6. BufferedReader
+7. Difference between Scanner and BufferedReader
+
+---------------------------------------------------------
+
+1. User Defined Input
+
+User Defined Input means taking input from the user while the
+program is executing.
+
+Instead of hardcoding values, Java allows users to enter values
+at runtime.
+
+---------------------------------------------------------
+
+2. Scanner Class
+
+Scanner is a predefined class available in java.util package.
+
+It is used to read user input from the keyboard.
+
+Syntax
+
+Scanner sc = new Scanner(System.in);
+
+Import Statement
+
+import java.util.Scanner;
+
+---------------------------------------------------------
+
+3. Why Import Scanner?
+
+Scanner belongs to java.util package.
+
+Whenever we use a class from another package, we must import it.
+
+Example
+
+import java.util.Scanner;
+
+---------------------------------------------------------
+
+4. System.in and System.out
+
+System.in
+
+Used for taking input from the keyboard.
+
+Example
+
+Scanner sc = new Scanner(System.in);
+
+System.out
+
+Used for displaying output.
+
+Example
+
+System.out.println("Enter Name");
+
+---------------------------------------------------------
+
+5. Scanner Reader Methods
+
+next()
+
+Reads only one word.
+
+Example
+
+Hello World
+
+Output
+
+Hello
+
+---------------------------------------------------------
+
+nextLine()
+
+Reads the complete line.
+
+Example
+
+Hello World
+
+Output
+
+Hello World
+
+---------------------------------------------------------
+
+nextInt()
+
+Reads an integer.
+
+---------------------------------------------------------
+
+nextFloat()
+
+Reads a float value.
+
+---------------------------------------------------------
+
+nextDouble()
+
+Reads a double value.
+
+---------------------------------------------------------
+
+nextBoolean()
+
+Reads a boolean value.
+
+---------------------------------------------------------
+
+6. Reading Character Input
+
+Scanner has no nextChar() method.
+
+Character input can be taken as:
+
+char ch = sc.next().charAt(0);
+
+Example
+
+Input
+
+India
+
+Output
+
+I
+
+---------------------------------------------------------
+
+7. BufferedReader
+
+BufferedReader is available in java.io package.
+
+It reads data efficiently using an internal buffer.
+
+It is mainly used for reading data from files.
+
+Syntax
+
+BufferedReader br =
+new BufferedReader(new InputStreamReader(System.in));
+
+---------------------------------------------------------
+
+8. Internal Buffer
+
+BufferedReader maintains an internal buffer of 8192 characters.
+
+This reduces communication with the disk and improves
+performance.
+
+---------------------------------------------------------
+
+9. Difference Between Scanner and BufferedReader
+
+Scanner
+
+• Package : java.util
+• Parses primitive data types
+• Easy to use
+• Slower
+
+BufferedReader
+
+• Package : java.io
+• Reads text only
+• Faster
+• Used for file handling
+
+---------------------------------------------------------
+
+10. Advantages of Scanner
+
+• Easy syntax
+• Reads different data types
+• Suitable for beginners
+
+---------------------------------------------------------
+
+11. Advantages of BufferedReader
+
+• Fast
+• Efficient
+• Better for large input
+• Used in File Handling
+
+---------------------------------------------------------
+
+Interview Questions
+
+Q1. Which package contains Scanner?
+
+Answer
+
+java.util
+
+---------------------------------------------------------
+
+Q2. Which package contains BufferedReader?
+
+Answer
+
+java.io
+
+---------------------------------------------------------
+
+Q3. Which method reads an integer?
+
+Answer
+
+nextInt()
+
+---------------------------------------------------------
+
+Q4. Which method reads the complete line?
+
+Answer
+
+nextLine()
+
+---------------------------------------------------------
+
+Q5. Does Scanner have nextChar() method?
+
+Answer
+
+No.
+
+Use
+
+next().charAt(0)
+
+---------------------------------------------------------
+
+Q6. Which is faster?
+
+Answer
+
+BufferedReader
+
+---------------------------------------------------------
+
+Summary
+
+Today I learned
+
+✓ Scanner Class
+
+✓ BufferedReader
+
+✓ Import Statement
+
+✓ System.in
+
+✓ System.out
+
+✓ next()
+
+✓ nextLine()
+
+✓ nextInt()
+
+✓ nextDouble()
+
+✓ Character Input
+
+✓ Difference between Scanner and BufferedReader
+
+=========================================================
+END OF DAY 08
+=========================================================

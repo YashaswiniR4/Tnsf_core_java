@@ -1,0 +1,220 @@
+=========================================================
+TNSIF CORE JAVA
+DAY 09 - CONSTRUCTORS IN JAVA
+=========================================================
+
+Topics Covered
+
+1. Constructor
+2. Features of Constructor
+3. Types of Constructors
+4. Default Constructor
+5. Parameterized Constructor
+6. Constructor Overloading
+7. Object Initialization
+8. this Keyword
+
+---------------------------------------------------------
+
+1. What is a Constructor?
+
+A constructor is a special member of a class that is used to
+initialize objects.
+
+It is automatically called when an object is created.
+
+Syntax
+
+ClassName(){
+
+}
+
+Example
+
+Student(){
+
+}
+
+---------------------------------------------------------
+
+2. Characteristics of Constructor
+
+• Constructor name must be the same as the class name.
+• It does not have a return type (not even void).
+• It is called automatically during object creation.
+• Used to initialize object data.
+
+---------------------------------------------------------
+
+3. Why do we use Constructors?
+
+• Initialize object data.
+• Avoid default values (0, null, false).
+• Reduce repeated code.
+• Improve readability.
+
+---------------------------------------------------------
+
+4. Types of Constructors
+
+1. Default Constructor
+2. Parameterized Constructor
+
+---------------------------------------------------------
+
+5. Default Constructor
+
+A constructor without parameters.
+
+Example
+
+Student(){
+
+    id = 101;
+    name = "Rahul";
+
+}
+
+---------------------------------------------------------
+
+6. Parameterized Constructor
+
+A constructor that accepts parameters.
+
+Example
+
+Student(int id,String name){
+
+    this.id = id;
+    this.name = name;
+
+}
+
+---------------------------------------------------------
+
+7. Constructor Overloading
+
+A class can have multiple constructors with different parameter
+lists.
+
+Example
+
+Student(){
+
+}
+
+Student(int id){
+
+}
+
+Student(int id,String name){
+
+}
+
+---------------------------------------------------------
+
+8. Object Initialization
+
+Objects are initialized when they are created.
+
+Example
+
+Student s = new Student();
+
+or
+
+Student s = new Student(101,"Rahul");
+
+---------------------------------------------------------
+
+9. this Keyword
+
+this refers to the current object.
+
+Used to differentiate instance variables from constructor
+parameters.
+
+Example
+
+this.id = id;
+
+this.name = name;
+
+---------------------------------------------------------
+
+10. Benefits of Constructor
+
+• Automatic Initialization
+• Cleaner Code
+• Better Readability
+• Object Creation becomes Easy
+
+---------------------------------------------------------
+
+Interview Questions
+
+Q1. What is a Constructor?
+
+A constructor is a special member used to initialize objects.
+
+---------------------------------------------------------
+
+Q2. Can a constructor have a return type?
+
+No.
+
+---------------------------------------------------------
+
+Q3. How many types of constructors are there?
+
+1. Default Constructor
+
+2. Parameterized Constructor
+
+---------------------------------------------------------
+
+Q4. Can a class have multiple constructors?
+
+Yes.
+
+This is called Constructor Overloading.
+
+---------------------------------------------------------
+
+Q5. When is a constructor called?
+
+Automatically when an object is created.
+
+---------------------------------------------------------
+
+Q6. What is Constructor Overloading?
+
+Creating multiple constructors with different parameter lists.
+
+---------------------------------------------------------
+
+Q7. What is the use of this keyword?
+
+It refers to the current object and resolves naming conflicts.
+
+---------------------------------------------------------
+
+Summary
+
+Today I learned
+
+✓ Constructor
+
+✓ Default Constructor
+
+✓ Parameterized Constructor
+
+✓ Constructor Overloading
+
+✓ Object Initialization
+
+✓ this Keyword
+
+=========================================================
+END OF DAY 09
+=========================================================

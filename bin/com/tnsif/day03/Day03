@@ -1,0 +1,211 @@
+=========================================================
+TNSIF CORE JAVA
+DAY 03 - CLASS AND OBJECT
+=========================================================
+
+Topics Covered
+
+1. Class
+2. Object
+3. Creating Objects
+4. Instance Variables
+5. Methods
+6. Reference Variable
+7. Memory Allocation
+
+---------------------------------------------------------
+
+1. What is a Class?
+
+A class is a blueprint or template used to create objects.
+
+A class can contain:
+
+• Variables
+• Methods
+• Constructors
+• Static Blocks
+
+Syntax:
+
+class Student{
+
+}
+
+---------------------------------------------------------
+
+2. What is an Object?
+
+An object is an instance of a class.
+
+Objects occupy memory and can access the variables and methods of a class.
+
+Syntax:
+
+ClassName objectName = new ClassName();
+
+Example:
+
+Student s = new Student();
+
+---------------------------------------------------------
+
+3. Creating an Object
+
+Step 1
+
+Create a Class
+
+Step 2
+
+Create an Object using the new keyword.
+
+Example:
+
+Student s = new Student();
+
+Here,
+
+Student → Class Name
+
+s → Reference Variable
+
+new → Memory Allocation Operator
+
+Student() → Constructor
+
+---------------------------------------------------------
+
+4. Reference Variable
+
+A reference variable stores the address of an object.
+
+Example:
+
+Student s = new Student();
+
+Here,
+
+s is the reference variable.
+
+---------------------------------------------------------
+
+5. Memory Allocation
+
+Reference Variable
+
+Stored in:
+Stack Memory
+
+Object
+
+Stored in:
+Heap Memory
+
+Diagram
+
+Stack Memory
+
+s
+│
+│
+▼
+
+Heap Memory
+
+--------------------
+Name
+Age
+Department
+--------------------
+
+---------------------------------------------------------
+
+6. Instance Variables
+
+Variables declared inside a class but outside methods are called instance variables.
+
+Example
+
+String name;
+
+int age;
+
+---------------------------------------------------------
+
+7. Methods
+
+Methods define the behaviour of an object.
+
+Example
+
+void display(){
+
+}
+
+---------------------------------------------------------
+
+Real Time Example
+
+Student
+
+Properties
+
+• Name
+• Age
+• Department
+
+Behaviour
+
+• Study()
+• AttendClass()
+
+---------------------------------------------------------
+
+Interview Questions
+
+Q1. What is a Class?
+
+A class is a blueprint used to create objects.
+
+---------------------------------------------------------
+
+Q2. What is an Object?
+
+An object is an instance of a class.
+
+---------------------------------------------------------
+
+Q3. What is a Reference Variable?
+
+A reference variable stores the address of an object.
+
+---------------------------------------------------------
+
+Q4. Where is the object stored?
+
+Objects are stored in Heap Memory.
+
+---------------------------------------------------------
+
+Q5. Where is the reference variable stored?
+
+Reference variables are stored in Stack Memory.
+
+---------------------------------------------------------
+
+Summary
+
+Today I learned
+
+✓ Class
+✓ Object
+✓ Reference Variable
+✓ Heap Memory
+✓ Stack Memory
+✓ Instance Variables
+✓ Methods
+
+=========================================================
+END OF DAY 03
+=========================================================

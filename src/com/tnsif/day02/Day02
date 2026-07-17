@@ -1,0 +1,159 @@
+=========================================================
+TNSIF CORE JAVA
+DAY 02 - OBJECT ORIENTED PROGRAMMING (OOP)
+=========================================================
+
+Topics Covered
+
+1. What is OOP?
+2. Why Java is Object-Oriented?
+3. Class
+4. Object
+5. Real-life Examples
+6. Four Pillars of OOP
+
+---------------------------------------------------------
+
+1. What is Object-Oriented Programming (OOP)?
+
+Object-Oriented Programming (OOP) is a programming paradigm
+where programs are designed using objects.
+
+An object contains:
+• Data (Attributes)
+• Behaviour (Methods)
+
+---------------------------------------------------------
+
+2. Why Java is Object-Oriented?
+
+Java is called an Object-Oriented Programming language because
+it uses classes and objects to represent real-world entities.
+
+Java supports:
+
+• Encapsulation
+• Inheritance
+• Polymorphism
+• Abstraction
+
+These are called the Four Pillars of OOP.
+
+---------------------------------------------------------
+
+3. What is a Class?
+
+A class is a blueprint or template used to create objects.
+
+A class contains:
+
+• Variables
+• Methods
+• Constructors
+• Static Blocks
+
+Syntax:
+
+class ClassName{
+
+}
+
+---------------------------------------------------------
+
+4. What is an Object?
+
+An object is an instance of a class.
+
+Syntax:
+
+ClassName obj = new ClassName();
+
+---------------------------------------------------------
+
+5. Real-Life Examples
+
+Car
+
+Properties
+• Color
+• Brand
+• Speed
+
+Behaviour
+• Start()
+• Stop()
+• Brake()
+
+---------------------------------------------------------
+
+Student
+
+Properties
+• Name
+• USN
+• Department
+
+Behaviour
+• Study()
+• AttendClass()
+
+---------------------------------------------------------
+
+Mobile
+
+Properties
+• Brand
+• RAM
+• Storage
+
+Behaviour
+• Call()
+• Message()
+• Camera()
+
+---------------------------------------------------------
+
+6. Four Pillars of OOP
+
+1. Encapsulation
+2. Abstraction
+3. Inheritance
+4. Polymorphism
+
+---------------------------------------------------------
+
+Interview Questions
+
+Q1. What is OOP?
+
+Object-Oriented Programming is a programming paradigm
+based on objects.
+
+Q2. Why is Java Object-Oriented?
+
+Because Java supports Classes and Objects.
+
+Q3. What is a Class?
+
+A class is a blueprint for creating objects.
+
+Q4. What is an Object?
+
+An object is an instance of a class.
+
+---------------------------------------------------------
+
+Summary
+
+Today I learned
+
+✓ Object-Oriented Programming
+✓ Class
+✓ Object
+✓ Properties
+✓ Behaviour
+✓ Four Pillars of OOP
+
+=========================================================
+END OF DAY 02
+=========================================================

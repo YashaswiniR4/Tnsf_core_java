@@ -1,0 +1,170 @@
+=========================================================
+TNSIF CORE JAVA
+DAY 04 - PACKAGES IN JAVA
+=========================================================
+
+Topics Covered
+
+1. What is a Package?
+2. Why do we use Packages?
+3. Types of Packages
+4. Package Naming Convention
+5. Creating User-Defined Packages
+6. Import Statement
+7. Advantages of Packages
+
+---------------------------------------------------------
+
+1. What is a Package?
+
+A package is a collection of related classes, interfaces and
+sub-packages.
+
+It is used to organize Java programs.
+
+Syntax
+
+package package_name;
+
+Example
+
+package com.tnsif.day04;
+
+---------------------------------------------------------
+
+2. Why do we use Packages?
+
+• Organize Java classes
+• Avoid naming conflicts
+• Improve code reusability
+• Easy maintenance
+• Better project management
+
+---------------------------------------------------------
+
+3. Types of Packages
+
+1. Built-in Packages
+
+These are predefined packages provided by Java.
+
+Examples
+
+java.lang
+java.util
+java.io
+java.sql
+
+---------------------------------------------------------
+
+2. User-Defined Packages
+
+Packages created by programmers.
+
+Example
+
+package com.tnsif.day04;
+
+---------------------------------------------------------
+
+4. Package Naming Convention
+
+Always use lowercase letters.
+
+General format
+
+package com.company.project.module;
+
+Example
+
+package com.tnsif.day04;
+
+---------------------------------------------------------
+
+5. Import Statement
+
+The import statement is used to access classes from another
+package.
+
+Syntax
+
+import packageName.ClassName;
+
+Example
+
+import java.util.Scanner;
+
+---------------------------------------------------------
+
+6. Creating a User-Defined Package
+
+Steps
+
+1. Create Java Project.
+2. Right Click src.
+3. New → Package.
+4. Package Name:
+
+com.tnsif.day04
+
+5. Create Java Classes inside the package.
+
+---------------------------------------------------------
+
+7. Advantages of Packages
+
+• Organized code
+• Better readability
+• Easy maintenance
+• Code reusability
+• Security through access control
+
+---------------------------------------------------------
+
+Interview Questions
+
+Q1. What is a Package?
+
+A package is a collection of related classes and interfaces.
+
+---------------------------------------------------------
+
+Q2. Why do we use Packages?
+
+To organize Java programs and avoid naming conflicts.
+
+---------------------------------------------------------
+
+Q3. What are the two types of Packages?
+
+1. Built-in Package
+2. User-Defined Package
+
+---------------------------------------------------------
+
+Q4. Which package is imported automatically?
+
+java.lang package.
+
+---------------------------------------------------------
+
+Q5. Which keyword is used to define a package?
+
+package
+
+---------------------------------------------------------
+
+Summary
+
+Today I learned
+
+✓ Package
+✓ Built-in Package
+✓ User-Defined Package
+✓ Package Naming Convention
+✓ Import Statement
+✓ Advantages of Packages
+
+=========================================================
+END OF DAY 04
+=========================================================

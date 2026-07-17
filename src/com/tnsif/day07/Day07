@@ -1,0 +1,325 @@
+=========================================================
+TNSIF CORE JAVA
+DAY 07 - PRIMITIVE DATA TYPES
+=========================================================
+
+Topics Covered
+
+1. Primitive Data Types
+2. Memory Size
+3. Range of Data Types
+4. ASCII Code
+5. Unicode
+6. Character Data Type
+7. float vs double
+
+---------------------------------------------------------
+
+1. What are Primitive Data Types?
+
+Primitive Data Types are predefined data types provided by Java.
+
+Java has 8 Primitive Data Types.
+
+1. byte
+2. short
+3. int
+4. long
+5. float
+6. double
+7. char
+8. boolean
+
+---------------------------------------------------------
+
+2. Integer Data Types
+
+byte
+
+Memory : 1 Byte (8 bits)
+
+Range
+
+-2^7 to (2^7)-1
+
+-128 to 127
+
+---------------------------------------------------------
+
+short
+
+Memory : 2 Bytes (16 bits)
+
+Range
+
+-2^15 to (2^15)-1
+
+---------------------------------------------------------
+
+int
+
+Memory : 4 Bytes (32 bits)
+
+Range
+
+-2^31 to (2^31)-1
+
+---------------------------------------------------------
+
+long
+
+Memory : 8 Bytes (64 bits)
+
+Range
+
+-2^63 to (2^63)-1
+
+Always use suffix L.
+
+Example
+
+long number = 9876543210L;
+
+---------------------------------------------------------
+
+3. Floating Point Data Types
+
+float
+
+Memory : 4 Bytes
+
+Precision : 6-7 Decimal Digits
+
+Suffix : F
+
+Example
+
+float marks = 89.5F;
+
+---------------------------------------------------------
+
+double
+
+Memory : 8 Bytes
+
+Precision : 15-16 Decimal Digits
+
+Example
+
+double salary = 25000.75;
+
+---------------------------------------------------------
+
+Difference between float and double
+
+float
+
+Memory : 32 bits
+
+Sign Bit : 1
+
+Exponent : 8 bits
+
+Fraction : 23 bits
+
+---------------------------------------------------------
+
+double
+
+Memory : 64 bits
+
+Sign Bit : 1
+
+Exponent : 11 bits
+
+Fraction : 52 bits
+
+Double provides higher precision than float.
+
+---------------------------------------------------------
+
+4. Character Data Type
+
+char
+
+Memory : 2 Bytes (16 bits)
+
+Stores a single character.
+
+Example
+
+char grade = 'A';
+
+---------------------------------------------------------
+
+5. Why char is 2 Bytes?
+
+Java uses Unicode instead of only ASCII.
+
+Unicode supports all international languages.
+
+Examples
+
+English
+
+Kannada
+
+Hindi
+
+Tamil
+
+Telugu
+
+Malayalam
+
+Marathi
+
+Japanese
+
+Chinese
+
+---------------------------------------------------------
+
+6. ASCII
+
+ASCII stands for
+
+American Standard Code for Information Interchange.
+
+ASCII supports English characters only.
+
+Example
+
+'A' → 65
+
+'a' → 97
+
+---------------------------------------------------------
+
+7. Unicode
+
+Unicode is an international character encoding standard.
+
+It supports all world languages.
+
+Because Java uses Unicode,
+
+char occupies 2 Bytes.
+
+---------------------------------------------------------
+
+8. Boolean
+
+Memory
+
+JVM Dependent
+
+Values
+
+true
+
+false
+
+---------------------------------------------------------
+
+9. Choosing Correct Data Type
+
+ID
+
+int
+
+Phone Number
+
+long
+
+Percentage
+
+float
+
+Salary
+
+double
+
+Grade
+
+char
+
+Name
+
+String
+
+---------------------------------------------------------
+
+Interview Questions
+
+Q1. How many Primitive Data Types are available in Java?
+
+Answer
+
+8
+
+---------------------------------------------------------
+
+Q2. Why is char 2 Bytes in Java?
+
+Answer
+
+Because Java uses Unicode.
+
+---------------------------------------------------------
+
+Q3. What is ASCII?
+
+Answer
+
+American Standard Code for Information Interchange.
+
+---------------------------------------------------------
+
+Q4. Difference between float and double?
+
+float
+
+32 bits
+
+Less Precision
+
+double
+
+64 bits
+
+Higher Precision
+
+---------------------------------------------------------
+
+Q5. Why do we use long for phone numbers?
+
+Answer
+
+Phone numbers exceed the range of int.
+
+---------------------------------------------------------
+
+Summary
+
+Today I learned
+
+✓ Primitive Data Types
+
+✓ Memory Size
+
+✓ Range
+
+✓ float vs double
+
+✓ ASCII
+
+✓ Unicode
+
+✓ char
+
+✓ Choosing Correct Data Types
+
+=========================================================
+END OF DAY 07
+=========================================================

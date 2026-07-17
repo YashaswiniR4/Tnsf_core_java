@@ -1,0 +1,352 @@
+==========================================
+        DAY 11 - STATIC, FINAL & ABSTRACT
+==========================================
+
+Topics Covered
+--------------
+1. Static Keyword
+2. Static Variable
+3. Static Method
+4. Static Block
+5. Final Keyword
+6. Final Variable
+7. Final Method
+8. Final Class
+9. Abstract Keyword
+10. Abstract Class
+11. Abstract Method
+
+-------------------------------------------------------
+1. STATIC KEYWORD
+-------------------------------------------------------
+
+Definition
+----------
+Static is a non-access modifier in Java.
+
+The static keyword is used to create members that belong to the class instead of the object.
+
+Static members are created only once in memory and are shared by all objects of the class.
+
+Why do we use Static?
+---------------------
+1. Saves memory.
+2. Only one copy is created.
+3. Shared among all objects.
+4. Can be accessed without creating an object.
+
+Features of Static
+------------------
+• Belongs to the class.
+• Memory is allocated only once.
+• Shared by all objects.
+• Can be applied to:
+   - Variables
+   - Methods
+   - Blocks
+   - Nested (Inner) Classes
+
+-------------------------------------------------------
+STATIC VARIABLE
+-------------------------------------------------------
+
+A static variable belongs to the class instead of the object.
+
+Example:
+--------
+class Student{
+    static String college="Tech High";
+}
+
+If 100 Student objects are created,
+Only one copy of college is created.
+
+-------------------------------------------------------
+STATIC METHOD
+-------------------------------------------------------
+
+A static method belongs to the class.
+
+It can be called using the class name.
+
+Example:
+--------
+Demo.display();
+
+No object is required.
+
+-------------------------------------------------------
+STATIC BLOCK
+-------------------------------------------------------
+
+A static block executes only once when the class is loaded into memory.
+
+Example:
+--------
+static{
+    System.out.println("Static Block");
+}
+
+-------------------------------------------------------
+RULES OF STATIC
+-------------------------------------------------------
+
+Inside Static Method
+
+✔ Can access Static Variables
+
+✔ Can call Static Methods
+
+✘ Cannot directly access Instance Variables
+
+✘ Cannot directly call Instance Methods
+
+-------------------------------------------------------
+INSTANCE METHOD vs STATIC METHOD
+-------------------------------------------------------
+
+Instance Method
+
+✔ Can access Instance Variables
+
+✔ Can call Instance Methods
+
+✔ Can access Static Variables
+
+✔ Can call Static Methods
+
+
+Static Method
+
+✘ Cannot directly access Instance Variables
+
+✘ Cannot directly call Instance Methods
+
+✔ Can access Static Variables
+
+✔ Can call Static Methods
+
+-------------------------------------------------------
+2. FINAL KEYWORD
+-------------------------------------------------------
+
+Definition
+----------
+Final is a non-access modifier.
+
+It is used to prevent modification.
+
+It can be applied to
+
+• Variable
+
+• Method
+
+• Class
+
+-------------------------------------------------------
+FINAL VARIABLE
+-------------------------------------------------------
+
+A final variable cannot be changed after initialization.
+
+Example
+
+final int PIN = 1234;
+
+PIN = 5678;
+
+Error
+
+-------------------------------------------------------
+FINAL METHOD
+-------------------------------------------------------
+
+A final method cannot be overridden.
+
+Example
+
+final void display(){
+
+}
+
+-------------------------------------------------------
+FINAL CLASS
+-------------------------------------------------------
+
+A final class cannot be inherited.
+
+Example
+
+final class Animal{
+
+}
+
+-------------------------------------------------------
+FEATURES OF FINAL
+-------------------------------------------------------
+
+Final Variable
+--------------
+Cannot change value.
+
+Final Method
+------------
+Cannot be overridden.
+
+Final Class
+-----------
+Cannot be inherited.
+
+-------------------------------------------------------
+3. ABSTRACT KEYWORD
+-------------------------------------------------------
+
+Definition
+----------
+Abstract is a non-access modifier.
+
+It is used to create incomplete classes and incomplete methods.
+
+Abstract classes cannot have objects.
+
+-------------------------------------------------------
+ABSTRACT CLASS
+-------------------------------------------------------
+
+An abstract class is declared using the abstract keyword.
+
+Example
+
+abstract class Animal{
+
+}
+
+Object creation is not allowed.
+
+Animal a = new Animal();
+
+Error
+
+-------------------------------------------------------
+ABSTRACT METHOD
+-------------------------------------------------------
+
+An abstract method has no body.
+
+Syntax
+
+abstract void makeSound();
+
+The child class must implement the method.
+
+-------------------------------------------------------
+WHY DO WE USE ABSTRACT?
+-------------------------------------------------------
+
+1. To achieve abstraction.
+
+2. To hide implementation.
+
+3. To force child classes to implement methods.
+
+-------------------------------------------------------
+FEATURES OF ABSTRACT CLASS
+-------------------------------------------------------
+
+• Cannot create objects.
+
+• Can contain Constructors.
+
+• Can contain Static Methods.
+
+• Can contain Final Methods.
+
+• Can contain Normal Methods.
+
+• Can contain Abstract Methods.
+
+• Can contain both Abstract and Non-Abstract Methods.
+
+-------------------------------------------------------
+IMPORTANT INTERVIEW QUESTIONS
+-------------------------------------------------------
+
+Q1. What is Static?
+
+Static is a non-access modifier that belongs to the class instead of the object.
+
+-------------------------------------------------------
+
+Q2. Why do we use Static?
+
+To save memory and share one copy among all objects.
+
+-------------------------------------------------------
+
+Q3. What is Final?
+
+Final is a non-access modifier used to prevent modification.
+
+-------------------------------------------------------
+
+Q4. What is Abstract?
+
+Abstract is a non-access modifier used to create incomplete classes and methods.
+
+-------------------------------------------------------
+
+Q5. Can we create an object of an abstract class?
+
+No.
+
+-------------------------------------------------------
+
+Q6. Can an abstract class have constructors?
+
+Yes.
+
+-------------------------------------------------------
+
+Q7. Can an abstract class have normal methods?
+
+Yes.
+
+-------------------------------------------------------
+
+Q8. Can an abstract class have static methods?
+
+Yes.
+
+-------------------------------------------------------
+
+Q9. Can an abstract class have final methods?
+
+Yes.
+
+-------------------------------------------------------
+SUMMARY
+-------------------------------------------------------
+
+Static
+------
+• Belongs to the class.
+• One copy for all objects.
+• Saves memory.
+
+Final
+-----
+• Variable → Cannot change value.
+• Method → Cannot override.
+• Class → Cannot inherit.
+
+Abstract
+--------
+• Cannot create objects.
+• Used to achieve abstraction.
+• Child class must implement abstract methods.
+• Can contain constructors, static methods, final methods and normal methods.
+
+==========================================
+             END OF DAY 11
+==========================================

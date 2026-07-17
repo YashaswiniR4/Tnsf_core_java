@@ -1,0 +1,767 @@
+=========================================================
+TNSIF CORE JAVA
+DAY 10 - INHERITANCE
+=========================================================
+
+Topics Covered
+
+1. Introduction to Inheritance
+2. Need for Inheritance
+3. extends Keyword
+4. Types of Inheritance
+5. Advantages of Inheritance
+6. Method Overriding (Introduction)
+
+---------------------------------------------------------
+
+1. What is Inheritance?
+
+Inheritance is one of the four pillars of Object-Oriented
+Programming (OOP).
+
+Inheritance allows one class to acquire the properties
+(variables) and behaviors (methods) of another class.
+
+The existing class is called Parent Class (Superclass).
+
+The new class is called Child Class (Subclass).
+
+---------------------------------------------------------
+
+2. Why do we use Inheritance?
+
+• Code Reusability
+
+• Reduces Duplicate Code
+
+• Easy Maintenance
+
+• Improves Readability
+
+• Supports Method Overriding
+
+---------------------------------------------------------
+
+3. extends Keyword
+
+Inheritance is achieved using the extends keyword.
+
+Syntax
+
+class Child extends Parent{
+
+}
+
+Example
+
+class Dog extends Animal{
+
+}
+
+---------------------------------------------------------
+
+4. Parent Class
+
+A class whose properties are inherited by another class.
+
+Example
+
+Animal
+
+---------------------------------------------------------
+
+5. Child Class
+
+A class that inherits properties from another class.
+
+Example
+
+Dog
+
+---------------------------------------------------------
+
+6. Types of Inheritance
+
+1. Single Inheritance
+
+One Parent → One Child
+
+Example
+
+Animal
+
+↓
+
+Dog
+
+---------------------------------------------------------
+
+2. Multilevel Inheritance
+
+Grand Parent
+
+↓
+
+Parent
+
+↓
+
+Child
+
+Example
+
+Animal
+
+↓
+
+Dog
+
+↓
+
+Puppy
+
+---------------------------------------------------------
+
+3. Hierarchical Inheritance
+
+One Parent
+
+↓
+
+Multiple Child Classes
+
+Example
+
+Animal
+
+↓
+
+Dog
+
+↓
+
+Cat
+
+---------------------------------------------------------
+
+4. Multiple Inheritance
+
+One Child inherits from two Parent Classes.
+
+Java does NOT support Multiple Inheritance using classes.
+
+Reason
+
+Diamond Problem
+
+However,
+
+It can be achieved using Interfaces.
+
+---------------------------------------------------------
+
+5. Hybrid Inheritance
+
+Combination of two or more inheritance types.
+
+Java supports Hybrid Inheritance only through Interfaces.
+
+---------------------------------------------------------
+
+6. Advantages of Inheritance
+
+• Code Reusability
+
+• Less Code Duplication
+
+• Supports Polymorphism
+
+• Better Code Organization
+
+• Easy Maintenance
+
+---------------------------------------------------------
+
+7. Method Overriding (Introduction)
+
+Method Overriding means redefining the Parent Class method
+inside the Child Class.
+
+It provides Runtime Polymorphism.
+
+---------------------------------------------------------
+
+Interview Questions
+
+Q1. What is Inheritance?
+
+Inheritance is the process of acquiring properties and
+behaviors from another class.
+
+---------------------------------------------------------
+
+Q2. Which keyword is used for inheritance?
+
+extends
+
+---------------------------------------------------------
+
+Q3. How many types of inheritance are there?
+
+Five
+
+1. Single
+
+2. Multilevel
+
+3. Hierarchical
+
+4. Multiple
+
+5. Hybrid
+
+---------------------------------------------------------
+
+Q4. Does Java support Multiple Inheritance?
+
+No.
+
+---------------------------------------------------------
+
+Q5. Why doesn't Java support Multiple Inheritance?
+
+Because of the Diamond Problem.
+
+---------------------------------------------------------
+
+Q6. How can Multiple Inheritance be achieved?
+
+Using Interfaces.
+
+---------------------------------------------------------
+
+Summary
+
+Today I learned
+
+✓ Inheritance
+
+✓ Parent Class
+
+✓ Child Class
+
+✓ extends Keyword
+
+✓ Five Types of Inheritance
+
+✓ Diamond Problem
+
+✓ Advantages of Inheritance
+
+✓ Method Overriding (Introduction)
+
+
+
+=========================================================
+TNSIF CORE JAVA
+DAY 10 - INHERITANCE (PART 2)
+=========================================================
+
+Topics Covered
+
+1. super Keyword
+2. this Keyword
+3. Constructor Chaining
+4. Method Overriding
+5. instanceof Operator
+6. Interview Questions
+7. Summary
+
+---------------------------------------------------------
+
+17. super Keyword
+
+The super keyword refers to the immediate Parent Class object.
+
+It is used to access Parent Class members.
+
+Uses of super keyword
+
+• Access Parent Class Variables
+• Call Parent Class Methods
+• Call Parent Class Constructor
+
+---------------------------------------------------------
+
+18. Access Parent Class Variable
+
+Example
+
+class Animal{
+
+    String name = "Animal";
+
+}
+
+class Dog extends Animal{
+
+    String name = "Dog";
+
+    void display(){
+
+        System.out.println(super.name);
+
+    }
+
+}
+
+Output
+
+Animal
+
+---------------------------------------------------------
+
+19. Call Parent Class Method
+
+Example
+
+class Animal{
+
+    void eat(){
+
+        System.out.println("Animal is Eating");
+
+    }
+
+}
+
+class Dog extends Animal{
+
+    void bark(){
+
+        super.eat();
+
+        System.out.println("Dog is Barking");
+
+    }
+
+}
+
+Output
+
+Animal is Eating
+
+Dog is Barking
+
+---------------------------------------------------------
+
+20. Call Parent Class Constructor
+
+The super() keyword is used to call the Parent Class constructor.
+
+Syntax
+
+super();
+
+or
+
+super(parameter);
+
+Example
+
+class Animal{
+
+    Animal(String name){
+
+        System.out.println(name);
+
+    }
+
+}
+
+class Dog extends Animal{
+
+    Dog(){
+
+        super("Tommy");
+
+    }
+
+}
+
+The super() statement must always be the FIRST statement
+inside the Child Class constructor.
+
+---------------------------------------------------------
+
+21. Constructor Chaining
+
+Constructor Chaining means calling one constructor from another.
+
+Types
+
+1. this()
+
+Calls the current class constructor.
+
+2. super()
+
+Calls the Parent Class constructor.
+
+Benefits
+
+• Code Reusability
+
+• Avoids Duplicate Initialization
+
+• Cleaner Code
+
+---------------------------------------------------------
+
+22. this Keyword
+
+The this keyword refers to the current object of the class.
+
+Uses
+
+• Refer Current Class Variable
+
+• Call Current Class Method
+
+• Call Current Class Constructor
+
+• Pass Current Object
+
+---------------------------------------------------------
+
+23. Resolving Naming Conflict
+
+Example
+
+class Student{
+
+    int id;
+
+    Student(int id){
+
+        this.id = id;
+
+    }
+
+}
+
+Here
+
+this.id
+
+→ Instance Variable
+
+id
+
+→ Constructor Parameter
+
+---------------------------------------------------------
+
+24. Difference between this and super
+
+this
+
+• Refers to Current Class Object
+
+• Access Current Class Members
+
+• Calls Current Class Constructor
+
+super
+
+• Refers to Parent Class Object
+
+• Access Parent Class Members
+
+• Calls Parent Class Constructor
+
+---------------------------------------------------------
+
+25. Method Overriding
+
+Method Overriding means redefining the Parent Class method
+inside the Child Class.
+
+Rules
+
+• Method Name should be same.
+
+• Parameters should be same.
+
+• Return Type should be same.
+
+• Happens only in Inheritance.
+
+Example
+
+class Animal{
+
+    void sound(){
+
+        System.out.println("Animal Sound");
+
+    }
+
+}
+
+class Dog extends Animal{
+
+    void sound(){
+
+        System.out.println("Dog Barks");
+
+    }
+
+}
+
+Output
+
+Dog Barks
+
+---------------------------------------------------------
+
+26. instanceof Operator
+
+instanceof is a binary operator.
+
+It checks whether an object belongs to a particular class,
+subclass or interface.
+
+Syntax
+
+object instanceof ClassName
+
+Returns
+
+true
+
+or
+
+false
+
+---------------------------------------------------------
+
+Example
+
+Dog d = new Dog();
+
+System.out.println(d instanceof Dog);
+
+Output
+
+true
+
+---------------------------------------------------------
+
+Example
+
+System.out.println(d instanceof Animal);
+
+Output
+
+true
+
+Reason
+
+Dog inherits Animal.
+
+---------------------------------------------------------
+
+Example
+
+Circle c = new Circle();
+
+System.out.println(c instanceof Triangle);
+
+Output
+
+false
+
+Reason
+
+Circle object does not belong to Triangle class.
+
+---------------------------------------------------------
+
+27. Upcasting
+
+Parent p = new Child();
+
+Example
+
+Animal a = new Dog();
+
+Valid
+
+Reason
+
+Dog IS-A Animal.
+
+---------------------------------------------------------
+
+28. Downcasting
+
+Dog d = new Animal();
+
+Invalid
+
+Compile Time Error
+
+Reason
+
+Parent object cannot be directly assigned to Child reference.
+
+---------------------------------------------------------
+
+29. Class Activity
+
+Activity 1
+
+Create
+
+Animal Class
+
+↓
+
+Dog Class
+
+↓
+
+Display Dog Name and Breed using Constructor and super().
+
+---------------------------------------------------------
+
+Activity 2
+
+Check
+
+Dog object belongs to
+
+Dog Class
+
+Animal Class
+
+Using instanceof operator.
+
+---------------------------------------------------------
+
+Interview Questions
+
+Q1. What is Inheritance?
+
+Inheritance is the process of acquiring properties and
+methods from one class to another.
+
+---------------------------------------------------------
+
+Q2. Which keyword is used for Inheritance?
+
+extends
+
+---------------------------------------------------------
+
+Q3. What is super keyword?
+
+It refers to the immediate Parent Class object.
+
+---------------------------------------------------------
+
+Q4. What is this keyword?
+
+It refers to the Current Class object.
+
+---------------------------------------------------------
+
+Q5. What is Constructor Chaining?
+
+Calling one constructor from another using
+this() or super().
+
+---------------------------------------------------------
+
+Q6. Can a class have Multiple Inheritance?
+
+No.
+
+---------------------------------------------------------
+
+Q7. Why Multiple Inheritance is not supported?
+
+Because of the Diamond Problem.
+
+---------------------------------------------------------
+
+Q8. How is Multiple Inheritance achieved in Java?
+
+Using Interfaces.
+
+---------------------------------------------------------
+
+Q9. What is instanceof?
+
+A binary operator used to check the type of an object.
+
+---------------------------------------------------------
+
+Q10. What is Method Overriding?
+
+Providing a new implementation of the Parent Class method
+inside the Child Class.
+
+---------------------------------------------------------
+
+Quick Revision
+
+✓ Inheritance
+
+✓ Parent Class
+
+✓ Child Class
+
+✓ extends
+
+✓ Single Inheritance
+
+✓ Multilevel Inheritance
+
+✓ Hierarchical Inheritance
+
+✓ Multiple Inheritance
+
+✓ Hybrid Inheritance
+
+✓ Diamond Problem
+
+✓ Interface
+
+✓ super Keyword
+
+✓ this Keyword
+
+✓ Constructor Chaining
+
+✓ Method Overriding
+
+✓ instanceof Operator
+
+✓ Upcasting
+
+✓ Downcasting
+
+=========================================================
+END OF DAY 10 NOTES
+=========================================================
+
+
+
+
+
+
+=========================================================
+END OF DAY 10
+=========================================================
