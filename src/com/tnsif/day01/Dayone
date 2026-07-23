@@ -1,0 +1,295 @@
+============================================================
+TNSIF CORE JAVA
+DAY 01 - INTRODUCTION TO JAVA
+============================================================
+
+Date:
+Topic:
+1. Introduction to Java
+2. History of Java
+3. Features of Java
+4. Java Editions
+5. JDK, JRE and JVM
+6. First Java Program
+7. Eclipse IDE Setup
+8. Git & GitHub Integration
+
+------------------------------------------------------------
+1. What is Java?
+------------------------------------------------------------
+
+Java is a high-level, object-oriented, class-based, platform-independent programming language.
+
+It was developed by James Gosling at Sun Microsystems in 1991 and officially released in 1995.
+
+Now Java is owned by Oracle Corporation.
+
+Java follows the principle:
+
+Write Once, Run Anywhere (WORA)
+
+------------------------------------------------------------
+2. History of Java
+------------------------------------------------------------
+
+• Developed by James Gosling.
+• Original name: Oak.
+• Later renamed to Java.
+• Released in 1995 by Sun Microsystems.
+• Oracle acquired Sun Microsystems in 2010.
+
+------------------------------------------------------------
+3. Features of Java
+------------------------------------------------------------
+
+• Simple
+• Object-Oriented
+• Platform Independent
+• Secure
+• Robust
+• Portable
+• Multithreaded
+• Distributed
+• Dynamic
+• High Performance
+• Architecture Neutral
+
+------------------------------------------------------------
+4. Java Editions
+------------------------------------------------------------
+
+Java is divided into three editions based on application requirements.
+
+1. Java SE (Standard Edition)
+
+Used for:
+• Core Java
+• Desktop Applications
+• Console Applications
+
+Examples:
+• Calculator
+• Student Management System
+• Library Management System
+
+------------------------------------------------------------
+
+2. Java EE (Enterprise Edition)
+
+Used for:
+• Web Applications
+• Enterprise Applications
+
+Examples:
+• Banking Systems
+• E-commerce Websites
+• Hospital Management Systems
+
+------------------------------------------------------------
+
+3. Java ME (Micro Edition)
+
+Used for:
+• Embedded Systems
+• IoT Devices
+• Smart TVs
+• Smart Watches
+
+------------------------------------------------------------
+5. JDK, JRE and JVM
+------------------------------------------------------------
+
+JDK (Java Development Kit)
+
+• Used to develop Java applications.
+• Contains JRE and development tools.
+
+JRE (Java Runtime Environment)
+
+• Used to run Java applications.
+• Contains JVM and required libraries.
+
+JVM (Java Virtual Machine)
+
+• Executes Java Bytecode.
+• Makes Java Platform Independent.
+
+Flow:
+
+Java Source Code
+        ↓
+Compiler (javac)
+        ↓
+Bytecode (.class)
+        ↓
+JVM
+        ↓
+Output
+
+------------------------------------------------------------
+6. First Java Program
+------------------------------------------------------------
+
+public class FirstProgram {
+
+    public static void main(String[] args) {
+
+        System.out.println("Hello, World!");
+
+    }
+}
+
+Output:
+
+Hello, World!
+
+------------------------------------------------------------
+7. Steps to Create Java Project in Eclipse
+------------------------------------------------------------
+
+1. Open Eclipse IDE.
+2. Click File → New → Java Project.
+3. Project Name:
+
+TNSIF_Core_Java
+
+4. Select JDK.
+5. Uncheck module-info.java.
+6. Click Finish.
+
+------------------------------------------------------------
+8. Steps to Create Java Class
+------------------------------------------------------------
+
+Right Click src
+↓
+
+New
+↓
+
+Class
+
+Class Name:
+
+FirstProgram
+
+Tick
+
+public static void main(String[] args)
+
+Click Finish.
+
+------------------------------------------------------------
+9. Running Java Program
+------------------------------------------------------------
+
+Right Click
+
+↓
+
+Run As
+
+↓
+
+Java Application
+
+Output:
+
+Hello, World!
+
+------------------------------------------------------------
+10. Git Commands
+------------------------------------------------------------
+
+Initialize Git
+
+git init
+
+Add Files
+
+git add .
+
+Commit
+
+git commit -m "First Java Program"
+
+Rename Branch
+
+git branch -M main
+
+Connect GitHub Repository
+
+git remote add origin <repository-url>
+
+Push Code
+
+git push -u origin main
+
+------------------------------------------------------------
+11. Commands Learned
+------------------------------------------------------------
+
+git init
+git add .
+git commit
+git branch
+git remote
+git push
+
+------------------------------------------------------------
+12. Interview Questions
+------------------------------------------------------------
+
+Q1. What is Java?
+
+Java is a high-level, object-oriented, platform-independent programming language.
+
+------------------------------------------------------------
+
+Q2. Who developed Java?
+
+James Gosling.
+
+------------------------------------------------------------
+
+Q3. Why is Java Platform Independent?
+
+Because Java programs run on JVM using Bytecode.
+
+------------------------------------------------------------
+
+Q4. What are Java Editions?
+
+• Java SE
+• Java EE
+• Java ME
+
+------------------------------------------------------------
+
+Q5. Difference between JDK, JRE and JVM?
+
+JDK → Development Kit
+
+JRE → Runtime Environment
+
+JVM → Executes Bytecode
+
+------------------------------------------------------------
+13. Summary
+------------------------------------------------------------
+
+Today I learned:
+
+✓ Introduction to Java
+✓ History of Java
+✓ Features of Java
+✓ Java Editions
+✓ JDK, JRE and JVM
+✓ First Java Program
+✓ Eclipse IDE Setup
+✓ Git Commands
+✓ GitHub Integration
+
+============================================================
+END OF DAY 01
+============================================================

@@ -1,0 +1,266 @@
+=========================================================
+TNSIF CORE JAVA
+DAY 06 - POJO CLASS & EXECUTOR CLASS
+=========================================================
+
+Topics Covered
+
+1. POJO Class
+2. Entity Class
+3. Executor Class
+4. Instance Variable
+5. Local Variable
+6. Reference Variable
+7. Object Creation
+8. Stack and Heap Memory
+
+---------------------------------------------------------
+
+1. What is a POJO Class?
+
+POJO stands for Plain Old Java Object.
+
+A POJO class contains only data members, constructors,
+getter/setter methods and business methods.
+
+It does not contain the main() method.
+
+Example:
+
+Person.java
+
+---------------------------------------------------------
+
+2. Entity Class
+
+An Entity class stores only data.
+
+Example
+
+Person
+
+Data Members
+
+• id
+• name
+• address
+• phoneNumber
+
+---------------------------------------------------------
+
+3. Executor Class
+
+The Executor class contains the main() method.
+
+It is responsible for creating objects and executing the
+program.
+
+Example
+
+Executor.java
+
+---------------------------------------------------------
+
+4. Why Separate POJO and Executor Class?
+
+• Better code organization
+• Easy maintenance
+• Reusability
+• Follows Object-Oriented Programming principles
+
+---------------------------------------------------------
+
+5. Instance Variable
+
+Variables declared inside a class but outside methods.
+
+Example
+
+private int id;
+public String name;
+
+These variables belong to the object.
+
+---------------------------------------------------------
+
+6. Local Variable
+
+Variables declared inside a method.
+
+Example
+
+public void display(){
+
+    int x = 10;
+
+}
+
+Local variables exist only inside that method.
+
+---------------------------------------------------------
+
+7. Reference Variable
+
+A reference variable stores the address of an object.
+
+Example
+
+Person p = new Person();
+
+Person -> Class Name
+
+p -> Reference Variable
+
+new -> Memory Allocation Operator
+
+Person() -> Constructor
+
+---------------------------------------------------------
+
+8. Object Creation
+
+Syntax
+
+ClassName objectName = new ClassName();
+
+Example
+
+Person p = new Person();
+
+---------------------------------------------------------
+
+9. Memory Allocation
+
+Reference Variable
+
+Stored in Stack Memory
+
+Object
+
+Stored in Heap Memory
+
+Diagram
+
+Stack
+
+p
+|
+|
+↓
+
+Heap
+
+----------------------
+id
+name
+address
+phone
+----------------------
+
+---------------------------------------------------------
+
+10. Default Values
+
+Data Type          Default Value
+
+int                0
+
+long               0
+
+float              0.0
+
+double             0.0
+
+boolean            false
+
+char               '\u0000'
+
+String             null
+
+---------------------------------------------------------
+
+11. Hardcoding
+
+Hardcoding means assigning values directly while declaring
+variables.
+
+Example
+
+int id = 10;
+
+This is not recommended unless the value is common for all
+objects.
+
+---------------------------------------------------------
+
+12. Common Data
+
+If the data is common for every object, use static variables.
+
+Example
+
+private static String country = "India";
+
+Every object shares the same value.
+
+---------------------------------------------------------
+
+Interview Questions
+
+Q1. What is a POJO Class?
+
+A POJO class is a Plain Old Java Object class that contains
+only data members and methods.
+
+---------------------------------------------------------
+
+Q2. Why do we create an Executor Class?
+
+To execute the program using the main() method.
+
+---------------------------------------------------------
+
+Q3. What is an Instance Variable?
+
+A variable declared inside a class but outside methods.
+
+---------------------------------------------------------
+
+Q4. What is a Local Variable?
+
+A variable declared inside a method.
+
+---------------------------------------------------------
+
+Q5. Where is the object stored?
+
+Heap Memory.
+
+---------------------------------------------------------
+
+Q6. Where is the reference variable stored?
+
+Stack Memory.
+
+---------------------------------------------------------
+
+Summary
+
+Today I learned
+
+✓ POJO Class
+✓ Entity Class
+✓ Executor Class
+✓ Object Creation
+✓ Reference Variable
+✓ Stack Memory
+✓ Heap Memory
+✓ Instance Variable
+✓ Local Variable
+✓ Default Values
+✓ Hardcoding
+✓ Static Variables
+
+=========================================================
+END OF DAY 06
+=========================================================

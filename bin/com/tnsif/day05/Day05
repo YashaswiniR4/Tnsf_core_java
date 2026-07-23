@@ -1,0 +1,181 @@
+=========================================================
+TNSIF CORE JAVA
+DAY 05 - ACCESS MODIFIERS
+=========================================================
+
+Topics Covered
+
+1. Access Modifiers
+2. Types of Access Modifiers
+3. Scope of Access Modifiers
+4. Why Access Modifiers are Used
+5. Difference between Access Modifiers
+6. Best Practices
+
+---------------------------------------------------------
+
+1. What are Access Modifiers?
+
+Access Modifiers are keywords that define the visibility
+or accessibility of classes, variables, methods and constructors.
+
+They provide security by controlling access to class members.
+
+---------------------------------------------------------
+
+2. Types of Access Modifiers
+
+1. Public
+2. Private
+3. Protected
+4. Default (Package-Private)
+
+---------------------------------------------------------
+
+3. Public Access Modifier
+
+Keyword
+
+public
+
+Scope
+
+Accessible from anywhere in the project.
+
+Example
+
+public String name;
+
+---------------------------------------------------------
+
+4. Private Access Modifier
+
+Keyword
+
+private
+
+Scope
+
+Accessible only within the same class.
+
+Example
+
+private int id;
+
+Private members cannot be accessed directly from another class.
+
+---------------------------------------------------------
+
+5. Protected Access Modifier
+
+Keyword
+
+protected
+
+Scope
+
+Accessible within the same package and by subclasses
+(inherited classes).
+
+Example
+
+protected long phoneNumber;
+
+---------------------------------------------------------
+
+6. Default Access Modifier
+
+No keyword is used.
+
+Scope
+
+Accessible only within the same package.
+
+Example
+
+String address;
+
+---------------------------------------------------------
+
+7. Why do we use Access Modifiers?
+
+• Data Security
+• Data Hiding
+• Controlled Access
+• Better Encapsulation
+• Prevent Unauthorized Access
+
+---------------------------------------------------------
+
+8. Accessibility Table
+
+Modifier     Same Class   Same Package   Subclass   Other Package
+
+Public          Yes            Yes           Yes          Yes
+
+Private         Yes            No            No           No
+
+Protected       Yes            Yes           Yes          No
+
+Default         Yes            Yes           No           No
+
+---------------------------------------------------------
+
+9. Interview Questions
+
+Q1. How many access modifiers are available in Java?
+
+Answer:
+Four.
+
+1. Public
+2. Private
+3. Protected
+4. Default
+
+---------------------------------------------------------
+
+Q2. Which access modifier is the most restrictive?
+
+Answer:
+Private
+
+---------------------------------------------------------
+
+Q3. Which access modifier is accessible everywhere?
+
+Answer:
+Public
+
+---------------------------------------------------------
+
+Q4. Which access modifier is accessible only inside the class?
+
+Answer:
+Private
+
+---------------------------------------------------------
+
+Q5. What is the default access modifier?
+
+Answer:
+Package-Private (Default)
+
+---------------------------------------------------------
+
+Summary
+
+Today I learned
+
+✓ Access Modifiers
+✓ Public
+✓ Private
+✓ Protected
+✓ Default
+✓ Scope of Access Modifiers
+✓ Data Hiding
+✓ Security
+
+=========================================================
+END OF DAY 05
+=========================================================
