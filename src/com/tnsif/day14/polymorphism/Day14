@@ -1,0 +1,195 @@
+Day 14 – Polymorphism (Part 1)
+Learning Objectives
+Understand the concept of Polymorphism.
+Identify the characteristics/features of Polymorphism.
+Know the advantages and disadvantages.
+Learn the types of Polymorphism.
+Understand Compile-time Polymorphism.
+Understand Runtime Polymorphism.
+Learn the rules of Method Overriding.
+What is Polymorphism?
+
+Definition:
+
+One thing can exhibit more than one form. This is called Polymorphism.
+
+The word Polymorphism comes from Greek:
+
+Poly = Many
+Morph = Forms
+In Java
+
+Polymorphism means:
+
+Same method name but different execution/behavior.
+
+Example:
+
+Water → Ice
+Water → Liquid
+Water → Steam
+
+Although it is the same water, it exists in different forms.
+
+Similarly,
+
+display();
+
+can behave differently depending on the object.
+
+Characteristics / Features of Polymorphism
+
+According to the slide:
+
+The functionality of a method behaves differently in different scenarios.
+The behavior of a method depends on the data provided.
+It allows the same method name with different implementations.
+Supports implicit type conversion.
+Advantages of Polymorphism
+Code Reusability
+Reduces Coupling
+Supports using one interface/reference for many objects
+Disadvantages of Polymorphism
+Reduces code readability.
+Slightly difficult for beginners to implement.
+Hook Question (Method Overloading)
+
+The trainer showed:
+
+class Test {
+
+    void m1(char ch) {
+        System.out.println("char argument");
+    }
+
+    void m1(int a) {
+        System.out.println("int argument");
+    }
+}
+Is this allowed?
+
+✅ Yes.
+
+Because the parameter types are different.
+
+This is called Method Overloading.
+
+Types of Polymorphism
+                 Polymorphism
+                 /          \
+Compile-time          Runtime
+Polymorphism        Polymorphism
+      |                   |
+Method Overloading   Method Overriding
+Operator Overloading
+Compile-Time Polymorphism
+
+Also called:
+
+Static Binding
+Early Binding
+
+Achieved by:
+
+Method Overloading
+
+Example:
+
+class Test {
+
+    void show() {
+        System.out.println("No parameters");
+    }
+
+    void show(int a) {
+        System.out.println(a);
+    }
+
+    void show(String s) {
+        System.out.println(s);
+    }
+
+    public static void main(String args[]) {
+
+        Test t = new Test();
+
+        t.show();
+        t.show(10);
+        t.show("Java");
+    }
+}
+Runtime Polymorphism
+
+Also called:
+
+Dynamic Binding
+Late Binding
+
+Achieved by:
+
+Method Overriding
+
+Example:
+
+class Animal {
+
+    void sound() {
+        System.out.println("Animal Sound");
+    }
+}
+
+class Dog extends Animal {
+
+    @Override
+    void sound() {
+        System.out.println("Bark");
+    }
+}
+
+public class Demo {
+
+    public static void main(String args[]) {
+
+        Animal a = new Dog();
+
+        a.sound();
+    }
+}
+
+Output
+
+Bark
+Interview Questions
+1. What is Polymorphism?
+
+One object can behave in many forms.
+
+2. How many types of Polymorphism are there?
+
+Two
+
+Compile-time
+Runtime
+3. Compile-time Polymorphism is achieved by?
+
+Method Overloading
+
+4. Runtime Polymorphism is achieved by?
+
+Method Overriding
+
+5. Can we overload the main() method?
+
+Yes.
+
+6. Can methods differ only by return type?
+
+No.
+
+7. What are the advantages of Polymorphism?
+Code Reusability
+Loose Coupling
+Flexibility
+8. What are the disadvantages?
+Slightly complex code
+Harder to understand for beginners
