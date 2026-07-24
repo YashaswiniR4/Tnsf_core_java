@@ -1,4 +1,4 @@
-package com.tnsif.day13A;
+package com.tnsif.day13;
 
 interface Student {
 

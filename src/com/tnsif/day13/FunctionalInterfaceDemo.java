@@ -1,5 +1,6 @@
 package com.tnsif.day13;
 
+
 @FunctionalInterface
 interface Demo {
 	void display();
