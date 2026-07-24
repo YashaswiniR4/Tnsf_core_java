@@ -1,0 +1,340 @@
+==========================================
+           TNSIF CORE JAVA
+               DAY 12
+==========================================
+
+TOPIC:
+------
+1. Interface
+2. Need of Interface
+3. Rules of Interface
+4. Implementing Interface
+5. Types of Interface
+6. Functional Interface
+7. Marker Interface
+8. Interface vs Abstract Class
+9. Real-Time Applications
+
+--------------------------------------------------
+1. INTERFACE
+--------------------------------------------------
+
+Definition:
+-----------
+An Interface is a special kind of class that contains
+only constants and method signatures.
+
+An Interface acts as a contract between the interface
+and the implementing class. Any class implementing
+an interface must provide the implementation for all
+its abstract methods.
+
+Features:
+---------
+• Provides complete abstraction.
+• Contains method declarations.
+• Variables are constants.
+• Supports multiple inheritance.
+• Improves code reusability.
+
+Syntax:
+-------
+
+<access-specifier> interface InterfaceName
+{
+    returnType methodName(parameters);
+
+    dataType variableName = value;
+}
+
+Example:
+
+public interface Vehicle
+{
+    void start();
+    void stop();
+}
+
+--------------------------------------------------
+2. NEED OF INTERFACE
+--------------------------------------------------
+
+1. Total Abstraction
+--------------------
+An interface stores only method signatures and hides
+the implementation from the user.
+
+2. Multiple Inheritance
+-----------------------
+Java does not support multiple inheritance using
+classes.
+
+Interfaces solve this problem.
+
+Example:
+
+class A
+class B
+
+class C implements A, B
+
+3. Loose Coupling
+-----------------
+Interface reduces dependency between classes.
+
+Each class works independently.
+
+--------------------------------------------------
+3. RULES OF INTERFACE
+--------------------------------------------------
+
+1. Interface cannot be instantiated.
+
+Example:
+
+Vehicle v = new Vehicle();   // Not Allowed
+
+2. Interface cannot be declared as final.
+
+3. Interface variables must be initialized.
+
+4. Variables are automatically:
+
+public static final
+
+5. Methods are automatically:
+
+public abstract
+
+6. Any class implementing an interface must
+implement all interface methods.
+
+7. Interface methods must always be declared
+as public while overriding.
+
+--------------------------------------------------
+4. IMPLEMENTING AN INTERFACE
+--------------------------------------------------
+
+Syntax:
+
+class ClassName implements InterfaceName
+{
+
+}
+
+Example:
+
+interface Vehicle
+{
+    void start();
+}
+
+class Car implements Vehicle
+{
+    public void start()
+    {
+        System.out.println("Car Started");
+    }
+}
+
+--------------------------------------------------
+5. TYPES OF INTERFACE
+--------------------------------------------------
+
+1. Functional Interface
+-----------------------
+
+Contains exactly one abstract method.
+
+Can also contain:
+• Default methods
+• Static methods
+
+Examples:
+---------
+Runnable
+ActionListener
+ItemListener
+
+Example:
+
+@FunctionalInterface
+
+interface Calculator
+{
+    void calculate();
+}
+
+--------------------------------------------------
+
+2. Marker Interface
+-------------------
+
+Contains no methods or variables.
+
+Used to provide information to JVM.
+
+Examples:
+---------
+Serializable
+Cloneable
+
+--------------------------------------------------
+6. INTERFACE VARIABLES
+--------------------------------------------------
+
+All interface variables are automatically:
+
+public static final
+
+Example:
+
+interface Demo
+{
+    int VALUE = 100;
+}
+
+Equivalent to:
+
+public static final int VALUE = 100;
+
+--------------------------------------------------
+7. INTERFACE METHODS
+--------------------------------------------------
+
+All interface methods are automatically:
+
+public abstract
+
+Example:
+
+void display();
+
+Equivalent to:
+
+public abstract void display();
+
+--------------------------------------------------
+8. ABSTRACT CLASS Vs INTERFACE
+--------------------------------------------------
+
+Abstract Class
+--------------
+• Uses extends keyword.
+• Can have abstract and normal methods.
+• Can have constructors.
+• Supports single inheritance.
+
+Interface
+---------
+• Uses implements keyword.
+• Contains abstract methods.
+• No constructors.
+• Supports multiple inheritance.
+
+--------------------------------------------------
+9. REAL-TIME APPLICATIONS
+--------------------------------------------------
+
+1. API Development
+
+Interfaces expose project APIs to other applications.
+
+Example:
+Bank APIs
+Payment Gateways
+
+2. Software Customization
+
+Different classes provide different implementations.
+
+3. Complete Abstraction
+
+Only method declaration is visible.
+
+Implementation remains hidden.
+
+--------------------------------------------------
+ADVANTAGES OF INTERFACE
+--------------------------------------------------
+
+• Provides abstraction.
+• Supports multiple inheritance.
+• Loose coupling.
+• Better code reusability.
+• Easy maintenance.
+• Standardized programming.
+
+--------------------------------------------------
+INTERVIEW QUESTIONS
+--------------------------------------------------
+
+1. What is an Interface?
+
+An Interface is a special type that contains method
+declarations and constants.
+
+--------------------------------------------------
+
+2. Can we create an object of an Interface?
+
+No.
+
+--------------------------------------------------
+
+3. Which keyword is used to implement an Interface?
+
+implements
+
+--------------------------------------------------
+
+4. Can Interface have constructors?
+
+No.
+
+--------------------------------------------------
+
+5. Can Interface have variables?
+
+Yes.
+They are public static final.
+
+--------------------------------------------------
+
+6. Can Interface support multiple inheritance?
+
+Yes.
+
+--------------------------------------------------
+
+7. Difference between extends and implements?
+
+extends    -> Used for inheritance.
+implements -> Used for implementing an interface.
+
+--------------------------------------------------
+
+8. What is a Functional Interface?
+
+An interface containing exactly one abstract method.
+
+--------------------------------------------------
+
+9. Give examples of Marker Interface.
+
+Serializable
+Cloneable
+
+--------------------------------------------------
+
+10. Main advantages of Interface?
+
+• Abstraction
+• Loose Coupling
+• Multiple Inheritance
+• Code Reusability
+
+==========================================
+               END OF DAY 12
+==========================================

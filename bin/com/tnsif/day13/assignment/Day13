@@ -1,0 +1,311 @@
+TNSIF CORE JAVA
+Day 13
+Topics Covered
+Types of Interfaces
+Implementing Interfaces
+Multiple Interfaces
+Abstract Class vs Interface
+Real-Time Applications of Interface
+Wrapper Classes
+Need for Wrapper Classes
+Primitive Data Types vs Wrapper Classes
+Wrapping and Unwrapping
+Real World Example
+1. Types of Interfaces
+
+Java mainly provides two types of interfaces.
+
+Functional Interface
+Contains only one abstract method.
+May contain any number of default methods.
+May contain any number of static methods.
+Introduced mainly for Lambda Expressions.
+
+Examples
+
+Runnable
+ActionListener
+ItemListener
+
+Example
+
+interface Demo
+{
+    void display();
+}
+
+Only one abstract method is present.
+
+Marker Interface
+
+A Marker Interface is an interface that does not contain any methods or fields.
+
+It is simply used to provide special information to the JVM.
+
+Examples
+
+Serializable
+Cloneable
+
+Example
+
+interface Student
+{
+
+}
+2. Implementing an Interface
+
+To implement an interface, we use the implements keyword.
+
+Syntax
+
+class ClassName implements InterfaceName
+{
+
+}
+
+Example
+
+interface Animal
+{
+    void sound();
+}
+
+class Dog implements Animal
+{
+    public void sound()
+    {
+        System.out.println("Barking");
+    }
+}
+3. Multiple Interfaces
+
+A Java class can implement multiple interfaces.
+
+Syntax
+
+class Demo implements Interface1, Interface2
+{
+
+}
+
+The class must override all abstract methods from every interface.
+
+Example
+
+interface A
+{
+    void show();
+}
+
+interface B
+{
+    void display();
+}
+
+class Test implements A,B
+{
+
+}
+4. Abstract Class vs Interface
+Abstract Class	Interface
+Used when classes have an "is-a" relationship	Used by unrelated classes
+Only one abstract class can be extended	Multiple interfaces can be implemented
+Can contain abstract and normal methods	Contains abstract, default and static methods
+Used to share common implementation	Used to provide common functionality
+5. Real-Time Applications of Interface
+
+Interfaces are widely used in software development.
+
+Examples
+
+Banking
+
+A Credit Card interface can have different implementations.
+
+Rupees
+Dollars
+Pounds
+
+Each bank provides its own implementation.
+
+API Development
+
+Interfaces expose project APIs to other projects.
+
+Example
+
+HDFC Bank can expose services to shopping applications.
+
+Software Design
+
+Interfaces help developers write flexible and reusable code.
+
+Full Abstraction
+
+Interfaces achieve complete abstraction.
+
+6. Wrapper Classes
+
+Wrapper Classes convert primitive data types into objects.
+
+Primitive data types cannot directly behave as objects.
+
+Wrapper classes solve this problem.
+
+Definition
+
+A Wrapper Class wraps a primitive data type inside an object.
+
+Primitive Data Types and Wrapper Classes
+Primitive	Wrapper Class
+byte	Byte
+short	Short
+int	Integer
+long	Long
+float	Float
+double	Double
+char	Character
+boolean	Boolean
+7. Why Wrapper Classes?
+
+Wrapper Classes are required because
+
+Collections store only objects.
+Generic classes work only with objects.
+Java utility classes use objects.
+Primitive values must sometimes be converted into objects.
+Wrapper classes provide conversion methods.
+8. Wrapping
+
+Converting a primitive value into an object.
+
+Example
+
+int x = 25;
+
+Integer obj = Integer.valueOf(x);
+
+(Older constructor syntax like new Integer(x) appears in the slides but is deprecated in modern Java.)
+
+9. Unwrapping
+
+Converting an object back into a primitive.
+
+Example
+
+Integer obj = Integer.valueOf(25);
+
+int number = obj.intValue();
+10. Real World Example
+
+Suppose Amazon collects customer information.
+
+Name
+Phone Number
+Debit Card Number
+Address
+
+String values are already objects.
+
+But
+
+Debit Card Number
+Phone Number
+
+may be primitive values.
+
+Before sending data to the server, Java converts primitive values into objects using Wrapper Classes.
+
+Important Points
+
+✔ Interface provides complete abstraction.
+
+✔ Interface contains abstract methods.
+
+✔ Multiple inheritance is possible using interfaces.
+
+✔ Functional Interface contains exactly one abstract method.
+
+✔ Marker Interface contains no methods.
+
+✔ Wrapper Classes convert primitive data into objects.
+
+✔ Collections work only with objects.
+
+✔ Wrapper Objects are immutable.
+
+Interview Questions
+1. What is an Interface?
+
+An Interface is a blueprint of a class that contains abstract methods.
+
+2. Which keyword is used to implement an interface?
+
+implements
+
+3. Can a class implement multiple interfaces?
+
+Yes.
+
+4. What is a Functional Interface?
+
+An interface containing exactly one abstract method.
+
+5. What is a Marker Interface?
+
+An empty interface that contains no methods.
+
+Example
+
+Serializable
+
+Cloneable
+
+6. Why do we use Wrapper Classes?
+
+To convert primitive data types into objects.
+
+7. Give the Wrapper Class for int.
+
+Integer
+
+8. What is Wrapping?
+
+Converting primitive data into an object.
+
+9. What is Unwrapping?
+
+Converting an object back into a primitive value.
+
+10. Why are Wrapper Classes important?
+
+Because Java Collections and Generic classes work only with objects.
+
+Programs to Create in Eclipse
+
+Package:
+
+com.tnsif.day13
+
+Create these Java files:
+
+1. FunctionalInterfaceDemo.java
+2. MarkerInterfaceDemo.java
+3. InterfaceImplementationDemo.java
+4. MultipleInterfaceDemo.java
+5. WrapperClassesDemo.java
+6. WrappingDemo.java
+7. UnWrappingDemo.java
+8. Day13.txt
+
+Summary
+Learned Functional and Marker Interfaces.
+Learned how to implement interfaces.
+Learned multiple interface implementation.
+Compared Abstract Classes with Interfaces.
+Studied real-world uses of interfaces.
+Learned Wrapper Classes.
+Learned primitive vs wrapper data types.
+Learned Wrapping and Unwrapping.
+Understood why Wrapper Classes are required in Java.
