@@ -52,9 +52,11 @@ Examples include:
 - Streams
 
 ## Purpose
+
 The purpose of this repository is to maintain my Java learning journey,
 practice programming concepts, complete TNSIF assignments, and track my
 progress throughout the technical training.
 
-##Author
-Yashaswini R
+## Author
+
+**Yashaswini R**
