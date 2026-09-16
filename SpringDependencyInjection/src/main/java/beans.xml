@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--- dependency injection via setter methods
+<bean id="student" class="com.tnsif.springdi.Student">
+<property name="studentName" value="Gayatri"/>
+<property name="id" value="121"/>
+</bean> -->
+<!--- dependency injection via setter methods
+<bean id="student1" class="com.tnsif.springdi.Student">
+<property name="studentName" value="Xavier"/>
+<property name="id" value="122"/>
+</bean> -->
+
+
+<!--- dependency injection via constructors -->
+<bean id="student2" class="com.tnsif.springdi.Student">
+<constructor-arg name="studentName" value="David"/>
+<constructor-arg name="id" value="324"/>
+</bean>
+
+<!--- dependency injection via setter for object dependency -->
+<bean id="student3" class="com.tnsif.springdiobjectinjection.Student">
+<property name="chit">
+<bean class="com.tnsif.springdiobjectinjection.MathCheat"/>
+</property>
+</bean>
+
+</beans>
