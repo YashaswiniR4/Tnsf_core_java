@@ -1,23 +1,23 @@
-# TNSIF Technical Training – Core Java
+# TNSIF Technical Training
 
-## About
+This repository contains my learning, practice, assignments, and project work completed during the **TNSIF Technical Training Program**.
 
-This repository contains my learning and practice work completed during the
-TNSIF Technical Training program.
+The repository is organized into separate branches based on the training modules and project work.
 
-The main focus of this repository is Core Java concepts, programming practice,
-assignments, and hands-on examples.
+## Repository Structure
 
-## Technologies Used
+| Branch | Description |
+|---|---|
+| `main` | Core Java learning and assignments |
+| `spring` | Spring Framework training projects |
+| `project` | Certificate Service project |
 
-- Java
-- Eclipse IDE
-- Git
-- GitHub
+## Core Java
 
-## Topics Covered
+The `main` branch contains my Core Java learning and practical work.
 
-### Core Java
+### Topics Covered
+
 - Java Basics
 - Classes and Objects
 - Constructors
@@ -36,12 +36,7 @@ assignments, and hands-on examples.
 - Annotations
 - Modifiers
 
-## Assignments
-
-The repository also contains the assignments and practical programs completed
-during the training.
-
-Examples include:
+### Assignments
 
 - Method Overloading – Ticket Booking
 - Multiple Interface
@@ -51,11 +46,32 @@ Examples include:
 - Multithreading
 - Streams
 
+## Spring Projects
+
+The `spring` branch contains the Spring projects completed during the technical training.
+
+Projects include:
+
+- ProductModule
+- Spring Dependency Injection
+- Spring Inversion of Control
+
+## Certificate Project
+
+The `project` branch contains my Certificate Service project developed as part of the training.
+
+## Technologies Used
+
+- Java
+- Spring Framework
+- Eclipse IDE
+- Git
+- GitHub
+- Maven / Gradle
+
 ## Purpose
 
-The purpose of this repository is to maintain my Java learning journey,
-practice programming concepts, complete TNSIF assignments, and track my
-progress throughout the technical training.. 
+The purpose of this repository is to maintain my Java and Spring learning journey, practice programming concepts, complete training assignments, and document my project work throughout the TNSIF Technical Training Program.
 
 ## Author
 
